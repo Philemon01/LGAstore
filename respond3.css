@@ -1,0 +1,49 @@
+@media (max-width: 600px) {
+    .menu {
+       display:none;
+       position: absolute;
+       background-color:orange;
+       right: 0;
+       left: 0;
+       text-align: center;
+       padding: 16px 0;
+     }
+ 
+     .logo1{
+         display: flex;
+         align-items: center;
+         height: 50px;
+     }
+ 
+     .navbar{
+         display: flex;
+         justify-content: space-between;
+     }
+   
+     .menu li:hover {
+       display: inline-block;
+       background-color: yellow;
+       transition: 0.3s ease;
+     }
+   
+     .menu li + li {
+       margin-top: 12px;
+     }
+   
+     input[type=checkbox]:checked ~ .menu {
+       display: block;
+     }
+   
+     .hamburger {
+       display: block;
+       color: white;
+     }
+   
+     .dropdown {
+       left: 50%;
+       top: 30px;
+       transform: translateX(35%);
+     }
+   
+     
+   }
